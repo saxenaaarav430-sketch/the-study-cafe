@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: the-study-cafe
+    runtime: node
+    buildCommand: npm install --omit=dev
+    startCommand: npm start
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: NODE_ENV
+        value: production
